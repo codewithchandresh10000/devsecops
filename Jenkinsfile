@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'codewithchandresh/flask-jenkins-demo'
+        IMAGE_NAME = 'codewithchandresh10000/flask-jenkins-demo'
         CONTAINER_NAME = 'flask-devsecops-app'
         SONAR_SCANNER_HOME = tool 'SonarScanner'
     }
@@ -12,7 +12,7 @@ pipeline {
         // 1. CHECKOUT
         stage('Checkout') {
             steps {
-                git branch:'main' url:https://github.com/codewithchandresh10000/devsecops.git
+                git branch:'main' url: 'https://github.com/codewithchandresh10000/devsecops.git'
             }
         }
 
