@@ -12,7 +12,7 @@ pipeline {
         // 1. CHECKOUT
         stage('Checkout') {
             steps {
-                git branch:'main' url: 'https://github.com/codewithchandresh10000/devsecops.git'
+                git branch:'main', url: 'https://github.com/codewithchandresh10000/devsecops.git'
             }
         }
 
